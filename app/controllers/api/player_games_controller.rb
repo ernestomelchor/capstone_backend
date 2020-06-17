@@ -14,7 +14,7 @@ class Api::PlayerGamesController < ApplicationController
     if @player_game && @player_game.attending?
       # do nothing
     elsif @player_game && !@player_game.attending?
-      @player_game.attending? = true
+      @player_game.attending? == true
       @player_game.save
       # render json: { errors: ["You've already signed up for this game."] }, status: 422
       # return

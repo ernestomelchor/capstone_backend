@@ -1,10 +1,5 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 # 20 Players
 Player.create!(name: "Jay Milton", email: "jay@example.com", password: "password", address: "1 Devon Ave, Chicago, Illinois 60645", position: "Forward", dob: Date.new(2000, 07, 21), level: "recreational")
@@ -17,12 +12,12 @@ Player.create!(name: "Marta Ramirez", email: "marta@example.com", password: "pas
 Player.create!(name: "Yesika Montoya", email: "yesika@example.com", password: "password", address: "3 Sacramento Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(2000, 07, 03), level: "recreational")
 Player.create!(name: "Adriana Reynoso", email: "adriana@example.com", password: "password", address: "4 Devon Ave, Chicago, IL 60645", position: "Goalkeeper", dob: Date.new(1990, 11, 12), level: "recreational")
 Player.create!(name: "Julie Smith", email: "julie@example.com", password: "password", address: "5 North California Ave, Chicago, IL 60645", position: "Defender", dob: Date.new(1992, 04, 06), level: "recreational")
-Player.create!(name: "Ernesto Melchor", email: "ernesto@example.com", password: "password", address: "88 North California Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1988, 8, 8), level: "recreational", admin: true)
+Player.create!(name: "Ernesto Melchor", email: "ernestomelchoralonso@gmail.com", password: "socceradmin88", address: "88 North California Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1988, 8, 8), level: "recreational", admin: true)
 Player.create!(name: "Peter Phillips", email: "peter@example.com", password: "password", address: "22 Devon Ave, Chicago, Illinois 60645", position: "Forward", dob: Date.new(1981, 07, 21), level: "recreational")
 Player.create!(name: "Yesenia Vazquez", email: "yesenia@example.com", password: "password", address: "22 Sacramento Ave, Chicago, IL 60645", position: "Midfield", dob: Date.new(1977, 06, 24), level: "recreational")
 Player.create!(name: "Arturo Pardo", email: "arturo@example.com", password: "password", address: "33 Devon Ave, Chicago, Illinois 60645", position: "Midfield", dob: Date.new(1996, 11, 10), level: "recreational")
 Player.create!(name: "Rocio Rios", email: "rocio@example.com", password: "password", address: "43 North California Ave, Chicago, IL 60645", position: "Defender", dob: Date.new(1979, 02, 13), level: "recreational")
-Player.create!(name: "Jim Gonzalez", email: "jim@example.com", password: "password", address: "54 Devon Ave, Chicago, Illinois 60645", position: "Goalkeeper", dob: Date.new(1983, 03, 27), level: "recreational")
+Player.create!(name: "Jim Conseco", email: "jim@example.com", password: "password", address: "54 Devon Ave, Chicago, Illinois 60645", position: "Goalkeeper", dob: Date.new(1983, 03, 27), level: "recreational")
 Player.create!(name: "Alexia Monroe", email: "alexia@example.com", password: "password", address: "14 Sacramento Ave, Chicago, IL 60645", position: "Midfield", dob: Date.new(1990, 07, 05), level: "recreational")
 Player.create!(name: "Miriam Altamirano", email: "miriam@example.com", password: "password", address: "25 Devon Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1990, 02, 19), level: "recreational")
 Player.create!(name: "Hope Sanders", email: "hope@example.com", password: "password", address: "53 Sacramento Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1990, 07, 03), level: "recreational")
@@ -55,7 +50,7 @@ Game.create!(player_id: 1, field_id: 1, date_time: DateTime.new(2020, 8, 26, 17,
 Game.create!(player_id: 8, field_id: 2, date_time: DateTime.new(2020, 7, 10, 18, 00, 00))
 Game.create!(player_id: 5, field_id: 7, date_time: DateTime.new(2020, 9, 27, 10, 00, 00))
 Game.create!(player_id: 7, field_id: 9, date_time: DateTime.new(2020, 9, 5, 12, 00, 00))
-Game.create!(player_id: 15, field_id: 13, date_time: DateTime.new(2020, 6, 1, 18, 00, 00))
+Game.create!(player_id: 15, field_id: 13, date_time: DateTime.new(2020, 9, 1, 18, 00, 00))
 Game.create!(player_id: 18, field_id: 16, date_time: DateTime.new(2020, 7, 10, 16, 00, 00))
 Game.create!(player_id: 19, field_id: 3, date_time: DateTime.new(2020, 7, 7, 9, 00, 00))
 Game.create!(player_id: 4, field_id: 6, date_time: DateTime.new(2020, 7, 20, 18, 00, 00))
@@ -63,16 +58,16 @@ Game.create!(player_id: 9, field_id: 8, date_time: DateTime.new(2020, 8, 3, 19, 
 Game.create!(player_id: 3, field_id: 11, date_time: DateTime.new(2020, 9, 3, 18, 30, 00))
 Game.create!(player_id: 14, field_id: 15, date_time: DateTime.new(2020, 7, 19, 19, 00, 00))
 Game.create!(player_id: 4, field_id: 12, date_time: DateTime.new(2020, 8, 25, 19, 00, 00))
-Game.create!(player_id: 2, field_id: 19, date_time: DateTime.new(2020, 5, 27, 18, 00, 00))
+Game.create!(player_id: 2, field_id: 19, date_time: DateTime.new(2020, 9, 27, 18, 00, 00))
 Game.create!(player_id: 9, field_id: 4, date_time: DateTime.new(2020, 6, 28, 10, 00, 00))
-Game.create!(player_id: 5, field_id: 5, date_time: DateTime.new(2020, 5, 28, 19, 00, 00))
-Game.create!(player_id: 9, field_id: 14, date_time: DateTime.new(2020, 6, 15, 20, 00, 00))
+Game.create!(player_id: 5, field_id: 5, date_time: DateTime.new(2020, 9, 23, 19, 00, 00))
+Game.create!(player_id: 9, field_id: 14, date_time: DateTime.new(2020, 7, 15, 20, 00, 00))
 Game.create!(player_id: 4, field_id: 11, date_time: DateTime.new(2020, 8, 28, 17, 00, 00))
 Game.create!(player_id: 2, field_id: 18, date_time: DateTime.new(2020, 10, 1, 19, 00, 00))
 Game.create!(player_id: 7, field_id: 10, date_time: DateTime.new(2020, 7, 8, 19, 00, 00))
-Game.create!(player_id: 4, field_id: 20, date_time: DateTime.new(2020, 6, 7, 8, 00, 00))
+Game.create!(player_id: 4, field_id: 20, date_time: DateTime.new(2020, 8, 7, 8, 00, 00))
 
-# Players Attending Games (with 2 players attending and then bailing) <- Maybe a better model name could be GameActivity
+# Players Attending Games
 PlayerGame.create!(game_id: 1, player_id: 1, attending: true)
 PlayerGame.create!(game_id: 1, player_id: 8, attending: true)
 PlayerGame.create!(game_id: 1, player_id: 2, attending: true)
